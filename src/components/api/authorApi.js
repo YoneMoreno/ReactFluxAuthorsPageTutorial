@@ -48,4 +48,4 @@ var AuthorApi = {
     }
 };
 
-module.exports = AuthorApi;
+export default AuthorApi;
