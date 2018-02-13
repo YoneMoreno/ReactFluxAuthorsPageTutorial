@@ -1,8 +1,10 @@
 import React from 'react';
+import {AuthorForm} from "./authorForm";
 
 const ManageAuthorPage = () => {
     return (
-        <h1>Manage Author</h1>
+
+        <AuthorForm/>
     );
 };
 
