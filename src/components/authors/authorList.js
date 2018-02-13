@@ -17,8 +17,10 @@ const AuthorList = (props) => {
         <div>
             <table className="table">
                 <thead>
-                <th>ID</th>
-                <th>Name</th>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                </tr>
                 </thead>
                 <tbody>
                 {props.authors.map(createAuthorRow, this)}

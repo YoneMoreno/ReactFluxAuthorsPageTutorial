@@ -1,7 +1,3 @@
-"use strict";
-
-//This file is mocking a web API by hitting hard coded data.
-
 import {authors} from "./authorData";
 
 import _ from "lodash";
