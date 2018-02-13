@@ -9,6 +9,7 @@ const AuthorForm = (props) => {
                    name="firstName"
                    className="form-control"
                    placeholder="First Name"
+                   onChange={props.onChange}
                    value={props.author.firstName}/>
             <br/>
 
@@ -17,6 +18,7 @@ const AuthorForm = (props) => {
                    name="lastName"
                    className="form-control"
                    placeholder="Last Name"
+                   onChange={props.onChange}
                    value={props.author.lastName}/>
             <br/>
 
