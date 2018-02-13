@@ -4,7 +4,7 @@ import './index.css';
 import {Home} from "./components/HomePage";
 import {About} from "./components/about/aboutPage";
 import {Header} from "./components/common/Header";
-import {Authors} from "./components/authors/authorPage";
+import {AuthorPage} from "./components/authors/authorPage";
 
 class App extends React.Component {
     render() {
@@ -15,7 +15,7 @@ class App extends React.Component {
                 Child = About;
                 break;
             case 'authors':
-                Child = Authors;
+                Child = AuthorPage;
                 break;
             default:
                 Child = Home;

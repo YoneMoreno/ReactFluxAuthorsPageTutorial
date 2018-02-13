@@ -1,6 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
 const AuthorList = (props) => {
+
     const createAuthorRow = function (author) {
         return (
             <tr key={author.id}>
@@ -24,6 +26,10 @@ const AuthorList = (props) => {
             </table>
         </div>
     );
+};
+
+AuthorList.propTypes = {
+    authors: PropTypes.array.isRequired
 };
 
 export {AuthorList}

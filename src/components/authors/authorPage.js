@@ -2,7 +2,7 @@ import React from 'react';
 import AuthorApi from "../api/authorApi";
 import {AuthorList} from "./authorList";
 
-class Authors extends React.Component {
+class AuthorPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -24,4 +24,4 @@ class Authors extends React.Component {
     }
 }
 
-export {Authors}
+export {AuthorPage}
