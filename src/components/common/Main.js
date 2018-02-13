@@ -6,6 +6,7 @@ import {Home} from "../HomePage";
 import {AuthorPage} from "../authors/authorPage";
 import {About} from "../about/aboutPage";
 import Redirect from "react-router-dom/es/Redirect";
+import {ManageAuthorPage} from "../authors/manageAuthorPage";
 
 
 const Main = () => (
@@ -13,6 +14,7 @@ const Main = () => (
         <Route exact path="/Home" component={Home}/>
         <Route path="/authors" component={AuthorPage}/>
         <Route path="/about" component={About}/>
+        <Route path="/author" component={ManageAuthorPage}/>
         <Redirect from="*" to="/Home"/>
     </Switch>
 );
