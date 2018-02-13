@@ -1,6 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Input extends React.Component {
+
+
     render() {
         let wrapperClass = 'form-group';
         if (this.props.error && this.props.error.length > 0) {
@@ -23,6 +26,15 @@ class Input extends React.Component {
             </div>
         );
     }
+}
+
+Input.propTypes = {
+    name: React.PropTypes.string.isRequired,
+    label: React.PropTypes.string.isRequired,
+    onChange: React.PropTypes.func.isRequired,
+    placeholder: React.PropTypes.string,
+    value: React.PropTypes.string,
+    error: React.PropTypes.string,
 }
 
 export {Input};
