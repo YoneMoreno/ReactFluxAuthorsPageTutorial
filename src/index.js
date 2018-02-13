@@ -31,7 +31,7 @@ function render() {
     ReactDOM.render(<App route={route}/>, document.getElementById('root'));
 }
 
-window.addEventListener('haschange', render);
+window.addEventListener('hashchange', render);
 render();
 
 
