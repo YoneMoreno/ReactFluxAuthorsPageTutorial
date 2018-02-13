@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AuthorForm = () => {
+const AuthorForm = (props) => {
     return (
         <form>
             <h1>Manage Author</h1>
@@ -9,7 +9,7 @@ const AuthorForm = () => {
                    name="firstName"
                    className="form-control"
                    placeholder="First Name"
-                   value=""/>
+                   value={props.author.firstName}/>
             <br/>
 
             <label htmlFor="lastName">Last Name</label>
@@ -17,7 +17,7 @@ const AuthorForm = () => {
                    name="lastName"
                    className="form-control"
                    placeholder="Last Name"
-                   value=""/>
+                   value={props.author.lastName}/>
             <br/>
 
             <input type="submit" value="Save" className="btn btn-default"/>

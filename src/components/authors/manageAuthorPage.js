@@ -1,11 +1,21 @@
 import React from 'react';
 import {AuthorForm} from "./authorForm";
 
-const ManageAuthorPage = () => {
-    return (
+class ManageAuthorPage extends React.Component {
+    state = {
+        author: {
+            id: '',
+            firstName: '',
+            lastName: '',
+        },
+    };
 
-        <AuthorForm/>
-    );
-};
+
+    render() {
+        return (
+            <AuthorForm author={this.state.author}/>
+        );
+    };
+}
 
 export {ManageAuthorPage}
