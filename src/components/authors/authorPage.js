@@ -2,11 +2,7 @@ import React from 'react';
 import AuthorApi from "../api/authorApi";
 
 class Authors extends React.Component {
-    getInitialState() {
-        return {
-            authors: []
-        };
-    }
+
 
     componentWillMount() {
         this.setState({authors: AuthorApi.getAllAuthors()});
