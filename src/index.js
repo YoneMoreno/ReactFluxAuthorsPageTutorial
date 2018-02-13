@@ -4,6 +4,7 @@ import './index.css';
 import {Home} from "./components/HomePage";
 import {About} from "./components/about/aboutPage";
 import {Header} from "./components/common/Header";
+import {Authors} from "./components/authors/authorPage";
 
 class App extends React.Component {
     render() {
@@ -12,6 +13,9 @@ class App extends React.Component {
         switch (this.props.route) {
             case 'about' :
                 Child = About;
+                break;
+            case 'authors':
+                Child = Authors;
                 break;
             default:
                 Child = Home;
