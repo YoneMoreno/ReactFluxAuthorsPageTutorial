@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import {Home} from "./components/HomePage";
 import {About} from "./components/about/aboutPage";
+import {Header} from "./components/common/Header";
 
 class App extends React.Component {
     render() {
@@ -18,6 +19,7 @@ class App extends React.Component {
 
         return (
             <div>
+                <Header/>
                 <Child/>
             </div>
         );
