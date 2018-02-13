@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2aeede79-690b-42de-86a7-228b5e36b2f4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/authors/authorForm.js" afterPath="$PROJECT_DIR$/src/components/authors/authorForm.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/common/textInput.js" afterPath="$PROJECT_DIR$/src/components/common/textInput.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -44,9 +45,11 @@
       <file leaf-file-name="authorForm.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/authors/authorForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-              <folding />
+            <state relative-caret-position="255">
+              <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,8 +57,8 @@
       <file leaf-file-name="textInput.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/common/textInput.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+            <state relative-caret-position="268">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -292,7 +295,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518501311031</updated>
-      <workItem from="1518501315295" duration="20617000" />
+      <workItem from="1518501315295" duration="21044000" />
     </task>
     <task id="LOCAL-00001" summary="homepage">
       <created>1518502347113</created>
@@ -441,11 +444,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518541031118</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add prop validation to reusable input">
+      <created>1518541411875</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1518541411875</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20617000" />
+    <option name="totallyTimeSpent" value="21044000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
@@ -499,7 +509,8 @@
     <MESSAGE value="add state to manageAuthorPage and using it in authorForm" />
     <MESSAGE value="add onChange to authorForm to write ;=)" />
     <MESSAGE value="create reusable input" />
-    <option name="LAST_COMMIT_MESSAGE" value="create reusable input" />
+    <MESSAGE value="add prop validation to reusable input" />
+    <option name="LAST_COMMIT_MESSAGE" value="add prop validation to reusable input" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -668,16 +679,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/authors/authorForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="255">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/common/textInput.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+        <state relative-caret-position="268">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

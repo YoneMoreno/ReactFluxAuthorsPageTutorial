@@ -1,26 +1,23 @@
 import React from 'react';
+import {Input} from "../common/textInput";
 
 const AuthorForm = (props) => {
     return (
         <form>
-            <h1>Manage Author</h1>
-            <label htmlFor="FirstName">First Name</label>
-            <input type="text"
-                   name="firstName"
-                   className="form-control"
-                   placeholder="First Name"
-                   onChange={props.onChange}
-                   value={props.author.firstName}/>
-            <br/>
+            <h1>Manage author</h1>
+            <Input
+                name="firstName"
+                label="First Name"
+                value={props.author.firstName}
+                onChange={props.onChange}
+            />
 
-            <label htmlFor="lastName">Last Name</label>
-            <input type="text"
-                   name="lastName"
-                   className="form-control"
-                   placeholder="Last Name"
-                   onChange={props.onChange}
-                   value={props.author.lastName}/>
-            <br/>
+            <Input
+                name="lastName"
+                label="Last Name"
+                value={props.author.lastName}
+                onChange={props.onChange}
+            />
 
             <input type="submit" value="Save" className="btn btn-default"/>
         </form>
