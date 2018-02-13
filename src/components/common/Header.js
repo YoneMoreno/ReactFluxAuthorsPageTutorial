@@ -12,11 +12,19 @@ const Header = () => {
             <ul className="navbar navbar-nav">
                 <li><Link to="/Home">Home</Link></li>
                 <li><Link to="/authors">Authors</Link></li>
-                <li><Link to="/about">About</Link></li>
+                <li><Link to="/about"
+                          onClick={(event) => {
+                              if (!(window.confirm("Are you sure you want to see this page?"))) {
+                                  event.preventDefault();
+                              }
+                          }
+                          }>About</Link>
+                </li>
             </ul>
         </nav>
 
-    );
+    )
+        ;
 };
 
 export {Header}
