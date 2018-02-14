@@ -12,7 +12,21 @@ class AuthorPage extends React.Component {
         }
     }
 
+    _onChange = () => {
+        this.setState({authors: AuthorStore.getAllAuthors()});
+    };
+
+    componentWillMount() {
+        AuthorStore.addChangeListener(this._onChange());
+    }
+
+    componentWillUnmount() {
+        AuthorStore.removeChangeListener(this._onChange());
+    }
+
     render() {
+
+
         return (
             <div>
                 <h1>Authors:</h1>
