@@ -30,7 +30,7 @@ const AuthorStore = assign({}, EventEmitter.prototype, {
 Dispatcher.register((action) => {
     switch (action.ActionType) {
         case ActionTypes.CREATE_AUTHOR:
-            authors.push(action.author);
+            _authors.push(action.author);
             AuthorStore.emitChange();
     }
 });

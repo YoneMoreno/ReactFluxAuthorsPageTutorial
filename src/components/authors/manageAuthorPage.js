@@ -2,6 +2,8 @@ import React from 'react';
 import {AuthorForm} from "./authorForm";
 import AuthorApi from "../api/authorApi";
 import toastr from 'toastr';
+import AuthorStore from "../../stores/authorStore";
+import {AuthorActions} from "../../actions/myAuthorActions";
 
 class ManageAuthorPage extends React.Component {
     state = {
@@ -21,7 +23,7 @@ class ManageAuthorPage extends React.Component {
 
     saveAuthor = (event) => {
         event.preventDefault();
-        AuthorApi.saveAuthor(this.state.author);
+        AuthorActions.createAuthor(this.state.author);
         toastr.success('Author saved ;=)');
     };
 
@@ -30,7 +32,7 @@ class ManageAuthorPage extends React.Component {
         const authorId = queryAuthorId.substr(queryAuthorId.lastIndexOf("/") + 1);
 
         if (authorId) {
-            this.setState({author: AuthorApi.getAuthorById(authorId)});
+            this.setState({author: AuthorStore.getAuthorById(authorId)});
         }
         // console.log(authorId.substr(authorId.lastIndexOf("/") + 1));
 
