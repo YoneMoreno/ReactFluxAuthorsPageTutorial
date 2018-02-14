@@ -1,5 +1,6 @@
 import React from 'react';
 import {Input} from "../common/textInput";
+import Link from "react-router-dom/es/Link";
 
 const AuthorForm = (props) => {
     return (
@@ -19,7 +20,9 @@ const AuthorForm = (props) => {
                 onChange={props.onChange}
             />
 
-            <input type="submit" value="Save" className="btn btn-default" onClick={props.onSave}/>
+            <button type="submit" value="Save" className="btn btn-default" onClick={props.onSave}><Link to="/authors">Save
+                author</Link>
+            </button>
         </form>
     );
 };

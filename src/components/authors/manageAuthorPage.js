@@ -1,6 +1,7 @@
 import React from 'react';
 import {AuthorForm} from "./authorForm";
 import AuthorApi from "../api/authorApi";
+import Redirect from "react-router-dom/es/Redirect";
 
 class ManageAuthorPage extends React.Component {
     state = {
