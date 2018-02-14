@@ -15,6 +15,7 @@ const Main = () => (
         <Route path="/authors" component={AuthorPage}/>
         <Route path="/about" component={About}/>
         <Route path="/author" component={ManageAuthorPage}/>
+        <Route path="/author/:id" component={ManageAuthorPage}/>
         <Redirect from="*" to="/Home"/>
     </Switch>
 );

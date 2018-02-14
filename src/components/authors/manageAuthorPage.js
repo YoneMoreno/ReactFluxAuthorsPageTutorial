@@ -25,6 +25,14 @@ class ManageAuthorPage extends React.Component {
         toastr.success('Author saved ;=)');
     };
 
+    componentWillMount = () => {
+        const authorId = this.id;
+
+        if (authorId) {
+            this.setState({author: AuthorApi.getAuthorById(authorId)});
+        }
+    };
+
     render() {
         return (
             <AuthorForm author={this.state.author}
