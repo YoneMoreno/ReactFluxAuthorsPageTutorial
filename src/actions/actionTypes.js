@@ -1,7 +1,7 @@
 import KeyMirror from 'react/lib/keyMirror';
 
-const CREATE_AUTHOR = keyMirror({
+const ActionTypes = KeyMirror({
     CREATE_AUTHOR: null
 });
 
-export default CREATE_AUTHOR;
+export {ActionTypes};
