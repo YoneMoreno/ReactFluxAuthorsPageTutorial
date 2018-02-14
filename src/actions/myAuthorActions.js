@@ -9,6 +9,13 @@ const AuthorActions = {
             actionType: ActionTypes.CREATE_AUTHOR,
             author: newAuthor
         });
+    },
+    updateAuthor: (author) => {
+        let updateAuthor = AuthorApi.saveAuthor(author);
+        Dispatcher.dispatch({
+            actionType: ActionTypes.UPDATE_AUTHOR,
+            author: updateAuthor
+        });
     }
 };
 
