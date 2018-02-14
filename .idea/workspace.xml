@@ -19,8 +19,8 @@
       <file leaf-file-name="manageAuthorPage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/authors/manageAuthorPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="34" column="65" lean-forward="false" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -317,7 +317,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518501311031</updated>
-      <workItem from="1518501315295" duration="36552000" />
+      <workItem from="1518501315295" duration="36673000" />
     </task>
     <task id="LOCAL-00001" summary="homepage">
       <created>1518502347113</created>
@@ -571,11 +571,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518615995911</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="TODO discover why it says: &#10;&#10;&#10;Uncaught TypeError: Cannot read property 'firstName' of undefined">
+      <created>1518616284760</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1518616284760</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36552000" />
+    <option name="totallyTimeSpent" value="36673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
@@ -609,7 +616,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add routes with react router" />
     <MESSAGE value="navigation with react router" />
     <MESSAGE value="add confirm dialog to transition to about page" />
     <MESSAGE value="TODO discover how to intercept and handle transition from a page" />
@@ -634,7 +640,8 @@
     <MESSAGE value="set author name from API in form" />
     <MESSAGE value="fix import for dispatcher" />
     <MESSAGE value="fix import for dispatcher and using flux to createAuthor and get its info to edit an Author" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix import for dispatcher and using flux to createAuthor and get its info to edit an Author" />
+    <MESSAGE value="TODO discover why it says: &#10;&#10;&#10;Uncaught TypeError: Cannot read property 'firstName' of undefined" />
+    <option name="LAST_COMMIT_MESSAGE" value="TODO discover why it says: &#10;&#10;&#10;Uncaught TypeError: Cannot read property 'firstName' of undefined" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -925,8 +932,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/authors/manageAuthorPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="34" column="65" lean-forward="false" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
