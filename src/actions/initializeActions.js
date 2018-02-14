@@ -1,5 +1,5 @@
 import Dispatcher from '../components/dispatcher/appDispatcher';
-import ActionTypes from './actionTypes';
+import {ActionTypes} from './actionTypes';
 import AuthorApi from '../components/api/authorApi';
 
 const initializeActions = {

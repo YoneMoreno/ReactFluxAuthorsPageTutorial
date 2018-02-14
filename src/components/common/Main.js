@@ -9,6 +9,7 @@ import Redirect from "react-router-dom/es/Redirect";
 import {ManageAuthorPage} from "../authors/manageAuthorPage";
 
 
+
 const Main = () => (
     <Switch>
         <Route exact path="/Home" component={Home}/>
