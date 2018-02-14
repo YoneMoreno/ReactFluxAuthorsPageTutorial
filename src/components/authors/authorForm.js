@@ -2,29 +2,45 @@ import React from 'react';
 import {Input} from "../common/textInput";
 import Link from "react-router-dom/es/Link";
 
-const AuthorForm = (props) => {
-    return (
-        <form>
-            <h1>Manage author</h1>
-            <Input
-                name="firstName"
-                label="First Name"
-                value={props.author.firstName}
-                onChange={props.onChange}
-            />
+class AuthorForm extends React.Component {
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.state.author === undefined) {
+            this.props.author = {
+                author: {
+                    id: '',
+                    firstName: '',
+                    lastName: '',
 
-            <Input
-                name="lastName"
-                label="Last Name"
-                value={props.author.lastName}
-                onChange={props.onChange}
-            />
+                }
+            };
+        }
+    }
 
-            <button type="submit" value="Save" className="btn btn-default" onClick={props.onSave}><Link to="/authors">Save
-                author</Link>
-            </button>
-        </form>
-    );
-};
+    render() {
+        return (
+            <form>
+                <h1>Manage author</h1>
+                <Input
+                    name="firstName"
+                    label="First Name"
+                    value={this.props.author.firstName}
+                    onChange={this.props.onChange}
+                />
 
-export {AuthorForm};
+                <Input
+                    name="lastName"
+                    label="Last Name"
+                    value={this.props.author.lastName}
+                    onChange={this.props.onChange}
+                />
+
+                <button type="submit" value="Save" className="btn btn-default" onClick={this.props.onSave}><Link
+                    to="/authors">Save
+                    author</Link>
+                </button>
+            </form>
+        );
+    }
+}
+
+export {AuthorForm}
