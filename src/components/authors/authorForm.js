@@ -19,7 +19,7 @@ const AuthorForm = (props) => {
                 onChange={props.onChange}
             />
 
-            <input type="submit" value="Save" className="btn btn-default"/>
+            <input type="submit" value="Save" className="btn btn-default" onClick={props.onSave}/>
         </form>
     );
 };

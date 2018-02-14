@@ -1,5 +1,6 @@
 import React from 'react';
 import {AuthorForm} from "./authorForm";
+import AuthorApi from "../api/authorApi";
 
 class ManageAuthorPage extends React.Component {
     state = {
@@ -17,10 +18,16 @@ class ManageAuthorPage extends React.Component {
         return this.setState({author: this.state.author});
     };
 
+    saveAuthor = (event) => {
+        event.preventDefault();
+        AuthorApi.saveAuthor(this.state.author);
+    };
+
     render() {
         return (
             <AuthorForm author={this.state.author}
-                        onChange={this.setAuthorState}/>
+                        onChange={this.setAuthorState}
+                        onSave={this.saveAuthor}/>
         );
     };
 }
