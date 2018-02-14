@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2aeede79-690b-42de-86a7-228b5e36b2f4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/actionTypes.js" afterPath="$PROJECT_DIR$/src/actions/actionTypes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/myAuthorActions.js" afterPath="$PROJECT_DIR$/src/actions/myAuthorActions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/authors/manageAuthorPage.js" afterPath="$PROJECT_DIR$/src/components/authors/manageAuthorPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stores/authorStore.js" afterPath="$PROJECT_DIR$/src/stores/authorStore.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/authors/manageAuthorPage.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="129">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -62,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authorStore.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="authorStore.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/stores/authorStore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+            <state relative-caret-position="166">
+              <caret line="50" column="33" lean-forward="false" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -89,8 +89,8 @@
       <file leaf-file-name="initializeActions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/actions/initializeActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="132">
+              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -98,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myAuthorActions.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="myAuthorActions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/actions/myAuthorActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="49" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+            <state relative-caret-position="265">
+              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -172,14 +172,14 @@
         <option value="$PROJECT_DIR$/src/actions/authorActions.js" />
         <option value="$PROJECT_DIR$/src/components/dispatcher/appDispatcher.js" />
         <option value="$PROJECT_DIR$/src/components/authors/authorForm.js" />
-        <option value="$PROJECT_DIR$/src/components/authors/manageAuthorPage.js" />
         <option value="$PROJECT_DIR$/src/components/authors/authorPage.js" />
         <option value="$PROJECT_DIR$/src/components/common/Main.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/actions/initializeActions.js" />
-        <option value="$PROJECT_DIR$/src/stores/authorStore.js" />
         <option value="$PROJECT_DIR$/src/actions/actionTypes.js" />
         <option value="$PROJECT_DIR$/src/actions/myAuthorActions.js" />
+        <option value="$PROJECT_DIR$/src/components/authors/manageAuthorPage.js" />
+        <option value="$PROJECT_DIR$/src/stores/authorStore.js" />
       </list>
     </option>
   </component>
@@ -324,14 +324,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518501311031</updated>
-      <workItem from="1518501315295" duration="44725000" />
-    </task>
-    <task id="LOCAL-00002" summary="routing with own functions">
-      <created>1518503348007</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1518503348008</updated>
+      <workItem from="1518501315295" duration="45648000" />
     </task>
     <task id="LOCAL-00003" summary="add header">
       <created>1518504403004</created>
@@ -669,11 +662,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518627053672</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="create UPDATE_AUTHOR action!">
+      <created>1518627300596</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1518627300597</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44725000" />
+    <option name="totallyTimeSpent" value="45648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
@@ -707,7 +707,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="passing down params in Route render to display author page" />
     <MESSAGE value="TODO DISCOVER why author.id is not being passed from authorPage to manageAuthorPage" />
     <MESSAGE value="create DISPATCHER ;=)" />
     <MESSAGE value="add action types const files" />
@@ -732,7 +731,8 @@
     <MESSAGE value="fix bug because of we need to instantiate the eventEmitter!!" />
     <MESSAGE value="add log to know action type being triggered" />
     <MESSAGE value="create UPDATE_AUTHOR action!" />
-    <option name="LAST_COMMIT_MESSAGE" value="create UPDATE_AUTHOR action!" />
+    <MESSAGE value="update author action!" />
+    <option name="LAST_COMMIT_MESSAGE" value="update author action!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -992,36 +992,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/authors/manageAuthorPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stores/authorStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/initializeActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/actionTypes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1030,10 +1000,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/initializeActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/myAuthorActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="49" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        <state relative-caret-position="265">
+          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/authors/manageAuthorPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stores/authorStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="50" column="33" lean-forward="false" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
           </folding>

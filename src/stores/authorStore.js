@@ -29,6 +29,12 @@ const AuthorStore = assign({}, EventEmitter.prototype, {
 
 });
 
+function replaceActualAuthorWithUpdatedAuthor(action) {
+    const existingAuthor = _.find(_authors, {id: action.author.id});
+    const existingAuthorIndex = _.findIndex(_authors, existingAuthor);
+    _authors.splice(existingAuthorIndex, 1, action.author);
+}
+
 Dispatcher.register((action) => {
     console.log('current actionType is: ' + action.actionType);
     switch (action.actionType) {
@@ -39,6 +45,11 @@ Dispatcher.register((action) => {
             break;
         case ActionTypes.CREATE_AUTHOR:
             _authors.push(action.author);
+            AuthorStore.emitChange();
+            break;
+        case ActionTypes.UPDATE_AUTHOR:
+            replaceActualAuthorWithUpdatedAuthor(action);
+
             AuthorStore.emitChange();
             break;
     }

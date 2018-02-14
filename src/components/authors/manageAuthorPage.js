@@ -23,7 +23,12 @@ class ManageAuthorPage extends React.Component {
 
     saveAuthor = (event) => {
         event.preventDefault();
-        AuthorActions.createAuthor(this.state.author);
+
+        if (this.state.author.id) {
+            AuthorActions.updateAuthor(this.state.author);
+        } else {
+            AuthorActions.createAuthor(this.state.author);
+        }
         toastr.success('Author saved ;=)');
     };
 
