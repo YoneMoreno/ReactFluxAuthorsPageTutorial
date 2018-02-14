@@ -40,7 +40,7 @@ class ManageAuthorPage extends React.Component {
 
     render() {
         return (
-            <AuthorForm author={this.state.author}
+            <AuthorForm author={this.state.author || {firstName: '', lastName: '', id: ''}}
                         onChange={this.setAuthorState}
                         onSave={this.saveAuthor}/>
         );

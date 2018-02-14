@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2aeede79-690b-42de-86a7-228b5e36b2f4" name="Default" comment="Sotres interaction we get">
+    <list default="true" id="2aeede79-690b-42de-86a7-228b5e36b2f4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/authors/authorPage.js" afterPath="$PROJECT_DIR$/src/components/authors/authorPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/authors/authorForm.js" afterPath="$PROJECT_DIR$/src/components/authors/authorForm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/authors/manageAuthorPage.js" afterPath="$PROJECT_DIR$/src/components/authors/manageAuthorPage.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="manageAuthorPage.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="manageAuthorPage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/authors/manageAuthorPage.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="166">
-              <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+              <caret line="42" column="89" lean-forward="false" selection-start-line="42" selection-start-column="89" selection-end-line="42" selection-end-column="89" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -52,18 +53,18 @@
       <file leaf-file-name="authorForm.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/authors/authorForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="68">
+              <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <marker date="1518617723300" expanded="true" signature="568:774" ph="&lt;Input/&gt;" />
-                <marker date="1518617723300" expanded="true" signature="978:999" ph="&lt;Input/&gt;" />
+                <marker date="1518622144862" expanded="true" signature="266:472" ph="&lt;Input/&gt;" />
+                <marker date="1518622144862" expanded="true" signature="676:697" ph="&lt;Input/&gt;" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authorPage.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="authorPage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/authors/authorPage.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -169,9 +170,9 @@
         <option value="$PROJECT_DIR$/src/actions/myAuthorActions.js" />
         <option value="$PROJECT_DIR$/src/components/dispatcher/appDispatcher.js" />
         <option value="$PROJECT_DIR$/src/stores/authorStore.js" />
-        <option value="$PROJECT_DIR$/src/components/authors/manageAuthorPage.js" />
-        <option value="$PROJECT_DIR$/src/components/authors/authorForm.js" />
         <option value="$PROJECT_DIR$/src/components/authors/authorPage.js" />
+        <option value="$PROJECT_DIR$/src/components/authors/authorForm.js" />
+        <option value="$PROJECT_DIR$/src/components/authors/manageAuthorPage.js" />
       </list>
     </option>
   </component>
@@ -316,7 +317,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518501311031</updated>
-      <workItem from="1518501315295" duration="38872000" />
+      <workItem from="1518501315295" duration="39698000" />
     </task>
     <task id="LOCAL-00001" summary="homepage">
       <created>1518502347113</created>
@@ -598,11 +599,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518618143886</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Stores interactions, we get them all from our Store.">
+      <created>1518618816889</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1518618816889</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38872000" />
+    <option name="totallyTimeSpent" value="39698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
@@ -636,8 +644,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TODO discover how to intercept and handle transition from a page" />
-    <MESSAGE value="add manage author page" />
     <MESSAGE value="add authorForm ;=)!" />
     <MESSAGE value="add state to manageAuthorPage and using it in authorForm" />
     <MESSAGE value="add onChange to authorForm to write ;=)" />
@@ -661,7 +667,9 @@
     <MESSAGE value="TODO discover why it says: &#10;&#10;&#10;Uncaught TypeError: Cannot read property 'firstName' of undefined" />
     <MESSAGE value="fix but, we retrieve intial data in authorStore from API" />
     <MESSAGE value="TODO DISCOVER WHY IT SAYS:&#10;&#10;×&#10;TypeError: Cannot read property 'author' of undefined&#10;AuthorForm.componentWillReceiveProps&#10;C:/Users/YonePC/WebstormProjects/flux/src/components/authors/authorForm.js:7&#10;   4 | &#10;   5 | class AuthorForm extends React.Component {&#10;   6 |     componentWillReceiveProps(nextProps) {&#10;&gt;  7 |         if (nextProps.state.author === undefined) {&#10;   8 |             this.props.author = {&#10;   9 |                 author: {&#10;  10 |                     id: '',&#10;View compiled&#10;▶ 15 stack frames were collapsed.&#10;This screen is visible only in development. It will not appear if the app crashes in production.&#10;Open your browser’s developer console to further inspect this error." />
-    <option name="LAST_COMMIT_MESSAGE" value="TODO DISCOVER WHY IT SAYS:&#10;&#10;×&#10;TypeError: Cannot read property 'author' of undefined&#10;AuthorForm.componentWillReceiveProps&#10;C:/Users/YonePC/WebstormProjects/flux/src/components/authors/authorForm.js:7&#10;   4 | &#10;   5 | class AuthorForm extends React.Component {&#10;   6 |     componentWillReceiveProps(nextProps) {&#10;&gt;  7 |         if (nextProps.state.author === undefined) {&#10;   8 |             this.props.author = {&#10;   9 |                 author: {&#10;  10 |                     id: '',&#10;View compiled&#10;▶ 15 stack frames were collapsed.&#10;This screen is visible only in development. It will not appear if the app crashes in production.&#10;Open your browser’s developer console to further inspect this error." />
+    <MESSAGE value="Stores interactions, we get them all from our Store." />
+    <MESSAGE value="simple solution to handle loading author's form when we try to create one and its first and last name are undefined." />
+    <option name="LAST_COMMIT_MESSAGE" value="simple solution to handle loading author's form when we try to create one and its first and last name are undefined." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -928,14 +936,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/authors/authorPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/authors/authorForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="68">
+          <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <marker date="1518617723300" expanded="true" signature="568:774" ph="&lt;Input/&gt;" />
-            <marker date="1518617723300" expanded="true" signature="978:999" ph="&lt;Input/&gt;" />
+            <marker date="1518622144862" expanded="true" signature="266:472" ph="&lt;Input/&gt;" />
+            <marker date="1518622144862" expanded="true" signature="676:697" ph="&lt;Input/&gt;" />
           </folding>
         </state>
       </provider>
@@ -943,18 +959,10 @@
     <entry file="file://$PROJECT_DIR$/src/components/authors/manageAuthorPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
-          <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+          <caret line="42" column="89" lean-forward="false" selection-start-line="42" selection-start-column="89" selection-end-line="42" selection-end-column="89" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/authors/authorPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>

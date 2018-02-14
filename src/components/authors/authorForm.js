@@ -3,18 +3,6 @@ import {Input} from "../common/textInput";
 import Link from "react-router-dom/es/Link";
 
 class AuthorForm extends React.Component {
-    componentWillReceiveProps(nextProps) {
-        if (nextProps.state.author === undefined) {
-            this.props.author = {
-                author: {
-                    id: '',
-                    firstName: '',
-                    lastName: '',
-
-                }
-            };
-        }
-    }
 
     render() {
         return (
