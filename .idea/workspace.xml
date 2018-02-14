@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aeede79-690b-42de-86a7-228b5e36b2f4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/initializeActions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stores/authorStore.js" afterPath="$PROJECT_DIR$/src/stores/authorStore.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -82,16 +82,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/node_modules/flux/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="myAuthorActions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/actions/myAuthorActions.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -104,11 +94,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authorStore.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="authorStore.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/stores/authorStore.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="81">
               <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="initializeActions.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/actions/initializeActions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -171,6 +173,7 @@
         <option value="$PROJECT_DIR$/src/components/authors/manageAuthorPage.js" />
         <option value="$PROJECT_DIR$/src/components/authors/authorPage.js" />
         <option value="$PROJECT_DIR$/src/stores/authorStore.js" />
+        <option value="$PROJECT_DIR$/src/actions/initializeActions.js" />
       </list>
     </option>
   </component>
@@ -315,7 +318,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518501311031</updated>
-      <workItem from="1518501315295" duration="41845000" />
+      <workItem from="1518501315295" duration="42113000" />
     </task>
     <task id="LOCAL-00001" summary="homepage">
       <created>1518502347113</created>
@@ -625,11 +628,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518624236864</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="delete authorApi call from flux store to separate  concerns, so instead of:&#10;&#10;AuthorApi.getAllAuthors();&#10;&#10;we init an empty array:&#10;&#10;[];">
+      <created>1518624457676</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1518624457676</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41845000" />
+    <option name="totallyTimeSpent" value="42113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
@@ -663,7 +673,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add onChange to authorForm to write ;=)" />
     <MESSAGE value="create reusable input" />
     <MESSAGE value="add prop validation to reusable input" />
     <MESSAGE value="remove PropTypes which are deprecated, and using Input, reusable own component to simplify form's logic." />
@@ -688,7 +697,8 @@
     <MESSAGE value="simple solution to handle loading author's form when we try to create one and its first and last name are undefined." />
     <MESSAGE value="another solution to handle how to put a default void author if it is undefined to be able to display author's creation form when it is undefined ;=)" />
     <MESSAGE value="Getting authors from store instead from API when displaying authors' list:&#10;&#10;TODO: why in the official course he does not get it to display them as easily:&#10;https://app.pluralsight.com/player?course=react-flux-building-applications&amp;author=cory-house&amp;name=react-flux-building-applications-m10&amp;clip=7&amp;mode=live&#10;&#10;¬¬" />
-    <option name="LAST_COMMIT_MESSAGE" value="Getting authors from store instead from API when displaying authors' list:&#10;&#10;TODO: why in the official course he does not get it to display them as easily:&#10;https://app.pluralsight.com/player?course=react-flux-building-applications&amp;author=cory-house&amp;name=react-flux-building-applications-m10&amp;clip=7&amp;mode=live&#10;&#10;¬¬" />
+    <MESSAGE value="delete authorApi call from flux store to separate  concerns, so instead of:&#10;&#10;AuthorApi.getAllAuthors();&#10;&#10;we init an empty array:&#10;&#10;[];" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete authorApi call from flux store to separate  concerns, so instead of:&#10;&#10;AuthorApi.getAllAuthors();&#10;&#10;we init an empty array:&#10;&#10;[];" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -978,6 +988,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/initializeActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
           </folding>
