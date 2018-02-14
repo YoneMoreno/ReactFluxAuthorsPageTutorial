@@ -1,7 +1,7 @@
 import React from 'react';
 import {AuthorForm} from "./authorForm";
 import AuthorApi from "../api/authorApi";
-import Redirect from "react-router-dom/es/Redirect";
+import toastr from 'toastr';
 
 class ManageAuthorPage extends React.Component {
     state = {
@@ -22,6 +22,7 @@ class ManageAuthorPage extends React.Component {
     saveAuthor = (event) => {
         event.preventDefault();
         AuthorApi.saveAuthor(this.state.author);
+        toastr.success('Author saved ;=)');
     };
 
     render() {
