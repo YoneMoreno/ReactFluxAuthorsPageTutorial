@@ -6,17 +6,19 @@ import * as _ from "lodash";
 
 let _authors = [];
 
+var eventEmitter = new EventEmitter();
+
 const CHANGE_EVENT = 'change';
 
 const AuthorStore = assign({}, EventEmitter.prototype, {
     addChangeListener: (callback) => {
-        this.on(CHANGE_EVENT, callback);
+        eventEmitter.on(CHANGE_EVENT, callback);
     },
     removeChangeListener: (callback) => {
-        this.removeListener(CHANGE_EVENT, callback);
+        eventEmitter.removeListener(CHANGE_EVENT, callback);
     },
     emitChange: () => {
-        this.emit(CHANGE_EVENT);
+        eventEmitter.emit(CHANGE_EVENT);
     },
     getAllAuthors: () => {
         return _authors;
@@ -28,10 +30,17 @@ const AuthorStore = assign({}, EventEmitter.prototype, {
 });
 
 Dispatcher.register((action) => {
-    switch (action.ActionType) {
+    console.log('current actionType is: ' + action.ActionType);
+    switch (action.actionType) {
+        case ActionTypes.INITIALIZE:
+            _authors = action.initialData.authors;
+            AuthorStore.emitChange();
+            // console.log('after authorStore updates, the authors list is: ' + _authors);
+            break;
         case ActionTypes.CREATE_AUTHOR:
             _authors.push(action.author);
             AuthorStore.emitChange();
+            break;
     }
 });
 

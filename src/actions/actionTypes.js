@@ -2,7 +2,7 @@ import KeyMirror from 'react/lib/keyMirror';
 
 const ActionTypes = KeyMirror({
     CREATE_AUTHOR: null,
-    INITIALIZE: null,
+    INITIALIZE: null
 });
 
 export {ActionTypes};
