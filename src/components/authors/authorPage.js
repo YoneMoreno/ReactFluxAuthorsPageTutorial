@@ -2,6 +2,7 @@ import React from 'react';
 import AuthorApi from "../api/authorApi";
 import {AuthorList} from "./authorList";
 import Link from "react-router-dom/es/Link";
+import AuthorStore from "../../stores/authorStore";
 
 class AuthorPage extends React.Component {
     constructor(props) {
@@ -12,7 +13,7 @@ class AuthorPage extends React.Component {
     }
 
     componentDidMount() {
-        this.setState({authors: AuthorApi.getAllAuthors()});
+        this.setState({authors: AuthorStore.getAllAuthors()});
     }
 
     render() {
