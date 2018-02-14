@@ -8,9 +8,7 @@ const AuthorList = (props) => {
     const createAuthorRow = function (author) {
         return (
             <tr key={author.id}>
-                <td><Link to="/author/"
-                          render={(props) => <ManageAuthorPage id={author.id} {...props}/>}>{author.id}</Link>
-                </td>
+                <td><Link to={"author/" + author.id}>{author.id}</Link></td>
                 <td>{author.firstName} {author.lastName}</td>
             </tr>
         )
