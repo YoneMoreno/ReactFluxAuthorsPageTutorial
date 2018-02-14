@@ -30,7 +30,7 @@ const AuthorStore = assign({}, EventEmitter.prototype, {
 });
 
 Dispatcher.register((action) => {
-    console.log('current actionType is: ' + action.ActionType);
+    console.log('current actionType is: ' + action.actionType);
     switch (action.actionType) {
         case ActionTypes.INITIALIZE:
             _authors = action.initialData.authors;
