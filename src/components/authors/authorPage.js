@@ -8,12 +8,8 @@ class AuthorPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            authors: []
+            authors: AuthorStore.getAllAuthors(),
         }
-    }
-
-    componentDidMount() {
-        this.setState({authors: AuthorStore.getAllAuthors()});
     }
 
     render() {
