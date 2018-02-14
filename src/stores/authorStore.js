@@ -3,9 +3,8 @@ import {ActionTypes} from '../../src/actions/actionTypes';
 import EventEmitter from "events";
 import assign from 'object-assign';
 import * as _ from "lodash";
-import AuthorApi from "../components/api/authorApi";
 
-let _authors = AuthorApi.getAllAuthors();
+let _authors = [];
 
 const CHANGE_EVENT = 'change';
 

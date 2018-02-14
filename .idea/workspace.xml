@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2aeede79-690b-42de-86a7-228b5e36b2f4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/authors/authorPage.js" afterPath="$PROJECT_DIR$/src/components/authors/authorPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stores/authorStore.js" afterPath="$PROJECT_DIR$/src/stores/authorStore.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -62,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authorPage.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="authorPage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/authors/authorPage.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -104,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authorStore.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="authorStore.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/stores/authorStore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state relative-caret-position="81">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -167,10 +167,10 @@
         <option value="$PROJECT_DIR$/src/actions/actionTypes.js" />
         <option value="$PROJECT_DIR$/src/actions/myAuthorActions.js" />
         <option value="$PROJECT_DIR$/src/components/dispatcher/appDispatcher.js" />
-        <option value="$PROJECT_DIR$/src/stores/authorStore.js" />
         <option value="$PROJECT_DIR$/src/components/authors/authorForm.js" />
         <option value="$PROJECT_DIR$/src/components/authors/manageAuthorPage.js" />
         <option value="$PROJECT_DIR$/src/components/authors/authorPage.js" />
+        <option value="$PROJECT_DIR$/src/stores/authorStore.js" />
       </list>
     </option>
   </component>
@@ -315,7 +315,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518501311031</updated>
-      <workItem from="1518501315295" duration="41599000" />
+      <workItem from="1518501315295" duration="41845000" />
     </task>
     <task id="LOCAL-00001" summary="homepage">
       <created>1518502347113</created>
@@ -618,11 +618,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518622592444</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Getting authors from store instead from API when displaying authors' list:&#10;&#10;TODO: why in the official course he does not get it to display them as easily:&#10;https://app.pluralsight.com/player?course=react-flux-building-applications&amp;author=cory-house&amp;name=react-flux-building-applications-m10&amp;clip=7&amp;mode=live&#10;&#10;¬¬">
+      <created>1518624236864</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1518624236864</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41599000" />
+    <option name="totallyTimeSpent" value="41845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
@@ -656,7 +663,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add state to manageAuthorPage and using it in authorForm" />
     <MESSAGE value="add onChange to authorForm to write ;=)" />
     <MESSAGE value="create reusable input" />
     <MESSAGE value="add prop validation to reusable input" />
@@ -681,7 +687,8 @@
     <MESSAGE value="Stores interactions, we get them all from our Store." />
     <MESSAGE value="simple solution to handle loading author's form when we try to create one and its first and last name are undefined." />
     <MESSAGE value="another solution to handle how to put a default void author if it is undefined to be able to display author's creation form when it is undefined ;=)" />
-    <option name="LAST_COMMIT_MESSAGE" value="another solution to handle how to put a default void author if it is undefined to be able to display author's creation form when it is undefined ;=)" />
+    <MESSAGE value="Getting authors from store instead from API when displaying authors' list:&#10;&#10;TODO: why in the official course he does not get it to display them as easily:&#10;https://app.pluralsight.com/player?course=react-flux-building-applications&amp;author=cory-house&amp;name=react-flux-building-applications-m10&amp;clip=7&amp;mode=live&#10;&#10;¬¬" />
+    <option name="LAST_COMMIT_MESSAGE" value="Getting authors from store instead from API when displaying authors' list:&#10;&#10;TODO: why in the official course he does not get it to display them as easily:&#10;https://app.pluralsight.com/player?course=react-flux-building-applications&amp;author=cory-house&amp;name=react-flux-building-applications-m10&amp;clip=7&amp;mode=live&#10;&#10;¬¬" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -959,21 +966,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stores/authorStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/authors/authorPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stores/authorStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
