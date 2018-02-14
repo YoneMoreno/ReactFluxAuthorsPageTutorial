@@ -26,8 +26,14 @@ class ManageAuthorPage extends React.Component {
     };
 
     componentDidMount = () => {
-        var authorId = this.props.match.params.id; //from the path '/author:id'
-        console.log(this.props);
+        const queryAuthorId = this.props.location.pathname; //from the path '/author:id'
+        const authorId = queryAuthorId.substr(queryAuthorId.lastIndexOf("/") + 1);
+
+        if (authorId) {
+            this.setState({author: AuthorApi.getAuthorById(authorId)});
+        }
+        // console.log(authorId.substr(authorId.lastIndexOf("/") + 1));
+
     };
 
     render() {

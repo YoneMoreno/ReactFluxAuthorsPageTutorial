@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2aeede79-690b-42de-86a7-228b5e36b2f4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stores/authorStore.js" afterPath="$PROJECT_DIR$/src/stores/authorStore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/authors/manageAuthorPage.js" afterPath="$PROJECT_DIR$/src/components/authors/manageAuthorPage.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="manageAuthorPage.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="manageAuthorPage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/authors/manageAuthorPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="30" selection-end-column="6" />
+            <state relative-caret-position="353">
+              <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -73,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authorStore.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="authorStore.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/stores/authorStore.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
@@ -165,12 +165,12 @@
         <option value="$PROJECT_DIR$/src/components/authors/authorForm.js" />
         <option value="$PROJECT_DIR$/src/components/common/Main.js" />
         <option value="$PROJECT_DIR$/src/components/authors/authorList.js" />
-        <option value="$PROJECT_DIR$/src/components/authors/manageAuthorPage.js" />
         <option value="$PROJECT_DIR$/src/components/dispatcher/appDispatcher.js" />
         <option value="$PROJECT_DIR$/src/actions/authorActions.js" />
         <option value="$PROJECT_DIR$/src/actions/actionTypes.js" />
         <option value="$PROJECT_DIR$/src/actions/myAuthorActions.js" />
         <option value="$PROJECT_DIR$/src/stores/authorStore.js" />
+        <option value="$PROJECT_DIR$/src/components/authors/manageAuthorPage.js" />
       </list>
     </option>
   </component>
@@ -315,7 +315,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518501311031</updated>
-      <workItem from="1518501315295" duration="34713000" />
+      <workItem from="1518501315295" duration="35639000" />
     </task>
     <task id="LOCAL-00001" summary="homepage">
       <created>1518502347113</created>
@@ -548,11 +548,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518613875669</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="add store private authors data to create new ones">
+      <created>1518614478795</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1518614478795</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34713000" />
+    <option name="totallyTimeSpent" value="35639000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
@@ -586,7 +593,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor delete unused function in authorsPage table" />
     <MESSAGE value="refactor: extract authorList stateless component to make authorPage simpler" />
     <MESSAGE value="refactor: rename AUthors as AuthorPage and use propTypes to validate props of AuthorList" />
     <MESSAGE value="fix console errors: th can only been children of tr!" />
@@ -611,7 +617,8 @@
     <MESSAGE value="add action to handle save author" />
     <MESSAGE value="CREATE STORE CHANGE LISTENER" />
     <MESSAGE value="add store registration to implement flux pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="add store registration to implement flux pattern" />
+    <MESSAGE value="add store private authors data to create new ones" />
+    <option name="LAST_COMMIT_MESSAGE" value="add store private authors data to create new ones" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -819,16 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/authors/manageAuthorPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="30" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/authorActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -913,6 +910,16 @@
           <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/authors/manageAuthorPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
